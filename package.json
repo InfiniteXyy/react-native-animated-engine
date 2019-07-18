@@ -1,0 +1,37 @@
+{
+  "name": "react-native-animated-engine",
+  "version": "0.0.1",
+  "description": "A react-hooks utility to help build react native animations",
+  "scripts": {
+    "start": "react-native start",
+    "run-ios": "react-native run-ios --simulator 'iPhone 7'",
+    "run-android": "react-native run-android",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "files": [
+    "src",
+    "index.d.ts"
+  ],
+  "main": "./src/index.js",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "animation",
+    "android",
+    "ios",
+    "simple",
+    "animated",
+    "hooks"
+  ],
+  "author": {
+    "name": "InfiniteXyy",
+    "email": "xuyiyangwing@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-native": ">=0.50.0"
+  }
+}
