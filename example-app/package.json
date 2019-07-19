@@ -12,7 +12,7 @@
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-animated-engine": "git+https://github.com/InfiniteXyy/react-native-animated-engine.git"
+    "react-native-animated-engine": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^16.8.19",
@@ -20,5 +20,5 @@
     "babel-preset-expo": "^5.1.1",
     "typescript": "^3.4.5"
   },
-  "private": true
+  "private": false
 }
