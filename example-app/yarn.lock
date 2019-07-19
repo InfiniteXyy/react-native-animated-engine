@@ -4454,10 +4454,10 @@ react-is@^16.8.1:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha1-W7weLSkUHJ+9/tRWND/ivEMKahY=
 
-react-native-animated-engine@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-animated-engine/-/react-native-animated-engine-0.0.1.tgz#1b786b0be462acfd284d5a0e61b4137a15740cf6"
-  integrity sha512-5m/y7rSSNWyjwroXLMvHhllzRlyTUP+aBVFpu9USjcnN2NPIwSGchBZthVpVtl/nIeYr6neKTdBGdBQNSy/soA==
+react-native-animated-engine@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-animated-engine/-/react-native-animated-engine-0.0.2.tgz#e6c9d98061e4fc622e240655c962c9c8692b7a76"
+  integrity sha512-IV3YOECahJ/WVx1k/019koc4yQuVhJwTubp2k33KO1hXaVndwsBBxD+99I1h0l4uoRYGgxS5E1L16nVO/XdZWQ==
 
 react-native-branch@2.2.5:
   version "2.2.5"

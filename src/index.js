@@ -11,27 +11,32 @@ function blink(animatedValue, isUp, duration) {
 export function useLoopEngine(duration = 1000) {
   const [animatedValue] = useState(new Animated.Value(0));
   const [running, setRunning] = useState(false);
-  const [animationLoop, setAnimationLoop] = useState(0);
 
+  let isRunning = false;
   useEffect(() => {
     if (running) {
-      Animated.sequence([
-        blink(animatedValue, true, duration),
-        blink(animatedValue, false, duration),
-      ]).start();
-      setAnimationLoop(
-        setInterval(() => {
-          Animated.sequence([
-            blink(animatedValue, true, duration),
-            blink(animatedValue, false, duration),
-          ]).start();
-        }, 2 * duration),
-      );
+      isRunning = true;
+      startAnimation();
     } else {
-      clearInterval(animationLoop);
-      setAnimationLoop(0);
+      stopAnimation();
     }
+    return stopAnimation;
   }, [running]);
+
+  function startAnimation() {
+    if (!isRunning) return;
+    Animated.sequence([
+      blink(animatedValue, true, duration),
+      blink(animatedValue, false, duration),
+    ]).start(() => {
+      startAnimation();
+    });
+  }
+
+  function stopAnimation() {
+    isRunning = false;
+    animatedValue.stopAnimation();
+  }
 
   function toggleStatus(status) {
     setRunning(status);

@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-engine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react-hooks utility to help build react native animations",
   "main": "./src/index.js",
   "keywords": [
