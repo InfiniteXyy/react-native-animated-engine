@@ -15,14 +15,14 @@
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-animated-engine": "0.0.3"
+    "react-native-animated-engine": "^0.0.3"
   },
   "devDependencies": {
     "@types/react": "^16.8.19",
     "@types/react-native": "^0.57.60",
     "babel-preset-expo": "^5.1.1",
-    "typescript": "^3.4.5",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.4.5"
   },
   "private": true
 }
