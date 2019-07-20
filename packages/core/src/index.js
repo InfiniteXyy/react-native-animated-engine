@@ -70,9 +70,20 @@ export function useFireEngine(duration) {
   return [animatedValue, fire];
 }
 
-export function interpolate(animatedValue, outputRange) {
+export function interpolate(
+  animatedValue,
+  outputRange,
+  easing,
+  extrapolate,
+  extrapolateLeft,
+  extrapolateRight,
+) {
   return animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: outputRange,
+    outputRange,
+    easing,
+    extrapolate,
+    extrapolateLeft,
+    extrapolateRight,
   });
 }

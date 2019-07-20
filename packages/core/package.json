@@ -1,0 +1,31 @@
+{
+  "name": "react-native-animated-engine",
+  "version": "0.0.3",
+  "description": "A react-hooks utility to help build react native animations",
+  "main": "./src/index.js",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "animation",
+    "android",
+    "ios",
+    "simple",
+    "animated",
+    "hooks"
+  ],
+  "author": {
+    "name": "InfiniteXyy",
+    "email": "xuyiyangwing@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InfiniteXyy/react-native-animated-engine/issues"
+  },
+  "homepage": "https://github.com/InfiniteXyy/react-native-animated-engine",
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-native": ">=0.50.0"
+  },
+  "private": false
+}
