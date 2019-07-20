@@ -19,36 +19,39 @@ const App = () => {
   const opacityValue = interpolate(loopValue, [0.2, 0.7]);
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView onScroll={handleNativeScrollEvent} scrollEventThrottle={32}>
-        <View style={{ flex: 1 }}>
-          <Text style={styles.title}>Engine</Text>
-          <View style={styles.article}>
-            <Animated.View style={{ opacity: opacityValue }}>
-              <View style={styles.skeleton} />
-              <View style={styles.skeleton} />
-              <View style={styles.skeleton} />
+      <View style={{ flex: 1 }}>
+        <ScrollView onScroll={handleNativeScrollEvent} scrollEventThrottle={32}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.title}>Engine</Text>
+            <View style={styles.article}>
+              <Animated.View style={{ opacity: opacityValue }}>
+                <View style={styles.skeleton} />
+                <View style={styles.skeleton} />
+                <View style={styles.skeleton} />
 
-              <View style={styles.gap} />
+                <View style={styles.gap} />
 
-              <View style={styles.skeleton} />
-              <View style={styles.skeleton} />
-              <View style={styles.skeleton} />
-            </Animated.View>
+                <View style={styles.skeleton} />
+                <View style={styles.skeleton} />
+                <View style={styles.skeleton} />
+              </Animated.View>
+            </View>
           </View>
-        </View>
-      </ScrollView>
-      <Animated.View style={[styles.header, { opacity: scrollValue }]}>
-        <Header title="Engine" />
-      </Animated.View>
+        </ScrollView>
+        <Animated.View style={[styles.header, { opacity: scrollValue }]}>
+          <Header title="Engine" />
+        </Animated.View>
+      </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
+  container: {
+    flex: 1,
+  },
   header: {
     position: 'absolute',
-    marginTop: 20,
     width: '100%',
   },
   title: {

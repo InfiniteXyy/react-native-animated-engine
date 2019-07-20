@@ -16,12 +16,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 36,
+    height: 40,
     borderBottomColor: '#eeeeee',
     borderBottomWidth: 1,
   },
   title: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: '400',
   },
 });

@@ -58,6 +58,18 @@ export function useScrollEngine(inputRange) {
   return [interpolatedValue, handleNativeEvent];
 }
 
+export function useFireEngine(duration) {
+  const [animatedValue] = useState(new Animated.Value(0));
+  function fire() {
+    animatedValue.setValue(0);
+    Animated.timing(animatedValue, {
+      toValue: 1,
+      duration,
+    });
+  }
+  return [animatedValue, fire];
+}
+
 export function interpolate(animatedValue, outputRange) {
   return animatedValue.interpolate({
     inputRange: [0, 1],
