@@ -12,30 +12,28 @@ const App = () => {
     setBlink(true);
     // componentWillUnMount => stopBlink()
     return () => setBlink(false);
-  }, []);
+  }, [setBlink]);
 
   // Animation engine will always use [0, 1] as output range
   // so you may interpolate it to your proper output range
   const opacityValue = interpolate(loopValue, [0.2, 0.7]);
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ flex: 1 }}>
+      <View style={styles.container}>
         <ScrollView onScroll={handleNativeScrollEvent} scrollEventThrottle={32}>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.title}>Engine</Text>
-            <View style={styles.article}>
-              <Animated.View style={{ opacity: opacityValue }}>
-                <View style={styles.skeleton} />
-                <View style={styles.skeleton} />
-                <View style={styles.skeleton} />
+          <Text style={styles.title}>Engine</Text>
+          <View style={styles.article}>
+            <Animated.View style={{ opacity: opacityValue }}>
+              <View style={styles.skeleton} />
+              <View style={styles.skeleton} />
+              <View style={styles.skeleton} />
 
-                <View style={styles.gap} />
+              <View style={styles.gap} />
 
-                <View style={styles.skeleton} />
-                <View style={styles.skeleton} />
-                <View style={styles.skeleton} />
-              </Animated.View>
-            </View>
+              <View style={styles.skeleton} />
+              <View style={styles.skeleton} />
+              <View style={styles.skeleton} />
+            </Animated.View>
           </View>
         </ScrollView>
         <Animated.View style={[styles.header, { opacity: scrollValue }]}>
