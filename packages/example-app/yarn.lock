@@ -4301,11 +4301,6 @@ preserve@^0.2.0:
   resolved "https://registry.npm.taobao.org/preserve/download/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier@^1.18.2:
-  version "1.18.2"
-  resolved "https://registry.npm.taobao.org/prettier/download/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
-  integrity sha1-aCPnxZAAF7S9Os9G/prEtNe9qeo=
-
 pretty-format@24.0.0-alpha.6:
   version "24.0.0-alpha.6"
   resolved "https://registry.npm.taobao.org/pretty-format/download/pretty-format-24.0.0-alpha.6.tgz#25ad2fa46b342d6278bf241c5d2114d4376fbac1"
@@ -4458,6 +4453,11 @@ react-is@^16.8.1:
   version "16.8.6"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha1-W7weLSkUHJ+9/tRWND/ivEMKahY=
+
+react-native-animated-engine@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-animated-engine/-/react-native-animated-engine-0.0.3.tgz#3344de24c4e7613efeaeb4d20b0c89023ffda907"
+  integrity sha512-URL3XeHCsKroPD4XRvE8j2gocgry8YPQaX9xPDHLe45VgMiJmNn9mO7dYcQ3YCuFfebBeRpx+TU2z8wCBvdraA==
 
 react-native-branch@2.2.5:
   version "2.2.5"
@@ -5319,9 +5319,9 @@ typescript@^3.4.5:
   integrity sha1-yDD2V/k/HqhGgZ6SkJL1/lmD6Xc=
 
 ua-parser-js@^0.7.18, ua-parser-js@^0.7.19:
-  version "0.7.20"
-  resolved "https://registry.npm.taobao.org/ua-parser-js/download/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha1-dScXi4L2pioPJD0flP0w4+PCEJg=
+  version "0.7.28"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
+  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
 uglify-es@^3.1.9:
   version "3.3.9"
